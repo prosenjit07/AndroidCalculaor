@@ -35,7 +35,7 @@
         android:layout_marginTop="40sp"
         android:layout_marginHorizontal="22sp"
         android:layout_gravity="center"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         />
     <EditText
         android:id="@+id/secondNumber"
@@ -50,7 +50,7 @@
         android:layout_marginTop="15sp"
         android:layout_marginHorizontal="22sp"
         android:layout_gravity="center"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         />
     <LinearLayout
         android:layout_width="wrap_content"
@@ -111,6 +111,69 @@
             android:textColor="@color/white"
             />
     </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="4"
+        android:layout_margin="30sp"
+        >
+        <Button
+            android:onClick="myButton"
+            android:id="@+id/modButtonID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:backgroundTint="#3F5AEC"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="1sp"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:onClick="myButton"
+            android:id="@+id/xorButtonID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F5AEC"
+            android:text="^"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="1sp"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:onClick="myButton"
+            android:id="@+id/andButtonID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F5AEC"
+            android:text="&amp;"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="1sp"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:onClick="myButton"
+            android:id="@+id/orButtonID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F5AEC"
+            android:text="||"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:layout_marginHorizontal="1sp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
     <TextView
         android:gravity="center"
         android:id="@+id/output"
